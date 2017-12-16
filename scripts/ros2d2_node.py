@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import rospy
 from std_msgs.msg import *
 from ttastromech import TTAstromech
