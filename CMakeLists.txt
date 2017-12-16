@@ -5,6 +5,7 @@ add_compile_options(-std=c++11 -fpermissive)
 
 find_package(catkin REQUIRED COMPONENTS
   rospy
+  roscpp
   std_msgs
 )
 
@@ -27,8 +28,8 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(ros2d2_voice src/ros2d2_voice.cpp)
-target_link_libraries(ros2d2_voice
+add_executable(ros2d2_synth src/ros2d2_synth.cpp)
+target_link_libraries(ros2d2_synth
   ${catkin_LIBRARIES}
   asound
 )

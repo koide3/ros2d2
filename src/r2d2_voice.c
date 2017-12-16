@@ -518,7 +518,7 @@ int main(int argc, char *argv[])
       {
       case 'h':
           show_help (argv[0]);
-          exit (0);
+          return (0);
       case 'D':
         device = strdup (optarg);
           break;
@@ -535,12 +535,12 @@ int main(int argc, char *argv[])
     fprintf (stderr, "%s: takes a number of groups of five arguments.\n", 
       argv[0]);
     fprintf (stderr, "'%s -- help' for usage.\n", argv[0]);
-    exit (-1);
+    return (-1);
     }
 
   err = setup_sound (&handle, device, argv[0]);
   if (err)
-    exit (-1); // Error message already displayed
+    return (-1); // Error message already displayed
 
   int i;
   for (i = 0; i < args_left / 5; i++)
@@ -586,7 +586,7 @@ int main(int argc, char *argv[])
         fprintf (stderr, "%s: unknown sound type specifier '%c'.\n", 
           argv[0], arg1[0]);
         fprintf (stderr, "'%s -- help' for usage.\n", argv[0]);
-        exit(-1);
+        return (-1);
       }
     }
 

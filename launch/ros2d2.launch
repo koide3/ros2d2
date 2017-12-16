@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="ros2d2" type="ros2d2_synth" name="ros2d2_synth">
+    <remap from="/ros2d2_synth/synth_cmd" to="/ros2d2_node/synth_cmd"/>
+  </node>
+  <node pkg="ros2d2" type="ros2d2_node.py" name="ros2d2_node"/>
+</launch>
