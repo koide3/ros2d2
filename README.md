@@ -29,7 +29,7 @@ $ rostopic pub /ros2d2_node/speak std_msgs/String "data: 'hello'"
 You can play preset beep sounds synthesized by *r2d2-voice*. Default preset sounds are; whistle, tonedown, toneup, failure, alert, confuse, and calculate. They are defined by a csv file at *ros2d2/data/presets*, and you can add new sounds by adding commands to the file.
 
 #### /ros2d2_node/speak
-This topic plays an R2D2 voice transformed from a text string using *ttastromech*. It makes sound by translating each character in the text to a corresponding predefined R2D2 sound. 
+With this topic, you can play R2D2 voices transformed from texts using *ttastromech*. It makes sounds by translating each character in a text to corresponding predefined R2D2 sound. 
 
 #### /ros2d2_node/cmd_synth
 This is a topic to play sounds by directly giving commands to *r2d2-voice*. See <a href="http://kevinboone.net/README_r2d2-voice.html">r2d2-voice</a> for the details of the command.
