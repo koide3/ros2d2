@@ -32,9 +32,9 @@ roslaunch ros2d2 ros2d2.launch
 $ rostopic pub /ros2d2_node/preset std_msgs/String "data: 'whistle'"
 
 # generate R2D2 sound from a text
-$ rostopic pub /ros2d2_node/speak std_msgs/String "data: 'hello'"
+$ rostopic pub /ros2d2_node/speak std_msgs/String "data: 'hello world'"
 ```
-
+Audio: [whistle](data/sound/whistle.ogg), [hello world](data/sound/hello.ogg)
 
 ## Topics
 #### /ros2d2_node/preset
