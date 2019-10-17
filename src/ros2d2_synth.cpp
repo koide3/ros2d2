@@ -1,3 +1,9 @@
+/*==========================================================================
+  ros2d2_synth.cpp
+  Copyright (c)2018 Kenji Koide
+  Distributed under the terms of the GNU Public Licence, V3.0
+==========================================================================*/
+
 #include <memory>
 #include <iostream>
 #include <boost/algorithm/string.hpp>
@@ -7,7 +13,7 @@
 
 #define main r2d2_voice_main
 #define srand(a) srand(0)
-extern "C" {
+    extern "C" {
 #include <r2d2_voice.c>
 }
 #undef srand

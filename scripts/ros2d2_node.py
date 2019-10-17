@@ -1,4 +1,9 @@
 #!/usr/bin/python
+"""
+  ros2d2_node.py
+  Copyright (c)2018 Kenji Koide
+  Distributed under the terms of the GNU Public Licence, V3.0
+"""
 import numpy
 import rospy
 import rospkg
