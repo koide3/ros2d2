@@ -17,9 +17,9 @@ cd ~/catkin_ws
 catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
 
-You may need to install pulse audio:
+You may need to install libasound2-dev:
 ```bash
-sudo apt install pulseaudio
+sudo apt install libasound2-dev
 ```
 
 ## Usage
